@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Опросник</title>
+</head>
+
+<body>
+    <form>
+        <p>Ответьте на вопросы ниже: </p><br />
+        <label>Кличка питомца:</label><input class="name" type="text" /><br />
+        <label> Имя владельца: </label><input class="owner" type="text" /><br />
+        <label> Возраст питомца: </label><input class="age" type="number" /> <br />
+        <label> Порода питомца: </label>
+        <select class="changeBreed">
+            <option value="Бенгал">Бенгал</option>
+            <option value="Сиамская">Сиамская</option>
+            <option value="Перс">Перс</option>
+            <option value="Мейнкун">Мейнкун</option>
+            <option value="Дворянин">"Дворянин"</option>
+        </select><br />
+
+        <label> Чем питается:</label><br /> 
+        <input type="checkbox" name="feed" value="1" class="dry"/>
+        сухой корм <br />
+
+        <input type="checkbox" name="feed" value="2" class="wet"/>
+        влажный корм <br />
+
+        <input type="checkbox" name="feed" value="3" class="natural"/>
+        натуральный корм <br />
+
+        <label>Пол животного: </label><br />
+        <input type="radio" name="s" value="m" class="male"/> Самец<br />
+        <input type="radio" name="s" value="f" class="female"/> Самка<br />
+        
+        <button onclick="addObject()">Сохранить</button>
+    </form>
+
+    <script src="./cat.js"></script>
+</body>
+
+</html>
